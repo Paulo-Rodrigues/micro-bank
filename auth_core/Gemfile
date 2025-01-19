@@ -18,12 +18,9 @@ gem "rack-cors"
 group :development, :test do
   gem "rspec-rails"
   gem "faker"
+  gem "pry-byebug"
   gem "factory_bot_rails"
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
   gem "rubocop-rails-omakase", require: false
-end
-
-group :development do
-  gem "pry-byebug"
 end
